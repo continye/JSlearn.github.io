@@ -24,7 +24,7 @@ console.log("hello");
 const openai = new OpenAI({
   apiKey: "sk-8b4b10cdc7a342a9b38447bef1863649",
   dangerouslyAllowBrowser: true, // 允许在浏览器中使用 API
-  baseURL: "/compatible-mode/v1",
+  baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1",
 });
 
 // 存储对话的上下文
