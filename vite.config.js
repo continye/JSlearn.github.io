@@ -12,10 +12,11 @@ export default defineConfig(({command,mode})=>{
             // strictPort:true
             open:"index.html",
              proxy: {
-                "/": {
+                "/api": {
                     target: "https://dashscope.aliyuncs.com",
                     changeOrigin: true,
                     secure: false,
+                    pathRewrite: { '^/': 'api' },
                 },
             },
         },
