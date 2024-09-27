@@ -13,7 +13,7 @@ export default defineConfig(({command,mode})=>{
             open:"index.html",
              proxy: {
                 "/": {
-                    target: "https://dashscope.aliyuncs.com",
+                    target: "https://dashscope.aliyuncs.com/compatible-mode/v1",
                     changeOrigin: true,
                     secure: false,
                     pathRewrite: { '^/': '' },
