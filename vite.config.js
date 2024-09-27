@@ -10,7 +10,14 @@ export default defineConfig(({command,mode})=>{
         server:{
             // port:3000,
             // strictPort:true
-            open:"index.html"
+            open:"index.html",
+             proxy: {
+                "/": {
+                    target: "https://dashscope.aliyuncs.com",
+                    changeOrigin: true,
+                    secure: false,
+                },
+            },
         },
         // logLevel:"silent",
         envDir:'dirname'
