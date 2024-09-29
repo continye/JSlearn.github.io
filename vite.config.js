@@ -12,11 +12,10 @@ export default defineConfig(({command,mode})=>{
             // strictPort:true
             open:"index.html",
              proxy: {
-                "/": {
+                "https://continye.github.io": {
                     target: "https://dashscope.aliyuncs.com",
                     changeOrigin: true,
                     secure: false,
-                    pathRewrite: { '^/': '' },
                 },
             },
         },
